@@ -13,6 +13,7 @@ func init() {
 }
 
 var (
+	Name          = "jsoniter"
 	Jsoniter      = jsoniter.ConfigDefault
 	json          = jsoniter.ConfigCompatibleWithStandardLibrary
 	Marshal       = json.Marshal
