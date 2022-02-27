@@ -15,3 +15,5 @@ var (
 	NewDecoder    = json.NewDecoder
 	NewEncoder    = json.NewEncoder
 )
+
+type RawMessage = json.RawMessage

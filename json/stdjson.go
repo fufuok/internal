@@ -1,5 +1,5 @@
-//go:build !jsoniter && !go_json
-// +build !jsoniter,!go_json
+//go:build !go_json
+// +build !go_json
 
 package json
 
@@ -15,3 +15,5 @@ var (
 	NewDecoder    = json.NewDecoder
 	NewEncoder    = json.NewEncoder
 )
+
+type RawMessage = json.RawMessage
