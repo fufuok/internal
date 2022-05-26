@@ -4,11 +4,12 @@
 
 ## JSON
 
-`json` 使用 `gin` 类似的可选组织方式:
+`json` 可选的组织方式:
 
-- `go build .` 默认使用 `json-iterator/go`
-- `go build -tags=stdjson .` 使用标准 JSON 库 `encoding/json`
-- `go build -tags=gojson .` 使用 `goccy/go-json`
+- `go build .` 默认使用 `goccy/go-json`
+- `go build -tags=std_json .` 使用标准 JSON 库 `encoding/json`
+- `go build -tags=sonic .` 使用 `bytedance/sonic`
+- 若 gin 使用 `goccy/go-json`, 程序自身使用 `bytedance/sonic`, 则: `go build -tags='sonic go_json'`
 
 ## Zstandard
 
