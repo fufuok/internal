@@ -24,8 +24,8 @@ func (m *RawMessage) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
-// Clone returns a copy of m.
-func (m RawMessage) Clone() []byte {
+// Copy returns a copy of m.
+func (m RawMessage) Copy() []byte {
 	tmp := make([]byte, len(m))
 	copy(tmp, m)
 	return tmp
